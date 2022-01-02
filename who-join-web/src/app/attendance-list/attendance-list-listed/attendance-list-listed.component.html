@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Attendance list</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <a 
+        href="#" 
+        class="list-group-item clearfix" 
+        *ngFor="let list of attendanceLists">
+            <div class=pull-left>
+                <h4 class="list-group-item-heading">{{ list.header }}</h4>
+                <p class="list-group-item-text">{{ list.message }}</p>
+                <p class="list-group-item-text">{{ list.dateTime }}</p>
+                <p class="list-group-item-text">Members, under construction</p>
+            </div>
+        </a>
+        <app-attendance-list-item></app-attendance-list-item>
+    </div>
+</div>
+
